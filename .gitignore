@@ -1,0 +1,5 @@
+*.txt
+*.bin
+*.bz2
+*.npy
+/__pycache__
