@@ -3,6 +3,7 @@ import jieba
 
 model = "ptt.word2vec_50.bin"
 model_w2v = word2vec.Word2Vec.load(model)
+jieba.set_dictionary('extra_dict/dict.txt.big')
 candidates = []
 with open('PPT_test_corpus.txt', encoding='utf-8') as f:
     for line in f:
@@ -51,8 +52,8 @@ for items in candidates:
             else:
                 seg.append(c)
         # print(len(seg))
-        print(seg)
-        print(word)
+        # print(seg)
+        # print(word)
         if len(seg) != 0:       
             score = model_w2v.n_similarity(word, seg)
         else:

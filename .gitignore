@@ -1,4 +1,5 @@
-*.txt
+Gossiping-QA-Dataset.txt
+ptt_seg.txt
 *.bin
 *.bz2
 *.npy
