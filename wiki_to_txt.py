@@ -1,16 +1,3 @@
-# from gensim.corpora import WikiCorpus
-# import logging
-
-# wiki_corpus = WikiCorpus('zhwiki-latest-pages-articles-multistream.xml.bz2', lemmatize=False, dictionary={})
-# texts_num = 0
-# output = open("wiki_texts.txt",'w',encoding='utf-8')
-
-# for text in wiki_corpus.get_texts():
-#     output.write(' '.join(text) + '\n')
-#     texts_num += 1
-#     if texts_num % 10000 == 0:
-#         logging.info("processed %d articles" % texts_num)
-
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # Author: Pan Yang (panyangnlp@gmail.com)

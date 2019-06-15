@@ -1,7 +1,7 @@
 from gensim.models import word2vec
 import jieba
 
-model = "wiki.word2vec_50.bin"
+model = "ptt.word2vec_50.bin"
 model_w2v = word2vec.Word2Vec.load(model)
 candidates = []
 with open('PPT_test_corpus.txt', encoding='utf-8') as f:
@@ -51,7 +51,8 @@ for items in candidates:
             else:
                 seg.append(c)
         # print(len(seg))
-        # print(seg)
+        print(seg)
+        print(word)
         if len(seg) != 0:       
             score = model_w2v.n_similarity(word, seg)
         else:

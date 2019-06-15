@@ -11,8 +11,8 @@ stopword_set = set()
 with open('extra_dict/stop_words.txt','r', encoding='utf-8') as stopwords:
     for stopword in stopwords:
         stopword_set.add(stopword.strip('\n'))
-output = open('wiki_seg.txt', 'w', encoding='utf-8')
-with open('wiki_texts.txt', 'r', encoding='utf-8') as content :
+output = open('ptt_seg.txt', 'w', encoding='utf-8')
+with open('Gossiping-QA-Dataset.txt', 'r', encoding='utf-8') as content :
     for texts_num, line in enumerate(content):
         line = line.strip('\n')
         line = Converter('zh-hant').convert(line)
