@@ -1,7 +1,7 @@
-Gossiping-QA-Dataset.txt
 ptt_seg.txt
-*.bin
-*.bz2
-*.npy
+wiki_seg.txt
+wiki_texts.txt
+/models
 *.pptx
+*.bz2
 /__pycache__
