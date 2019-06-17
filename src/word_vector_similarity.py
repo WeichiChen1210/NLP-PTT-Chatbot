@@ -92,10 +92,10 @@ def main():
         res = []
         index = 1
         # get the question's vector
-        question = avg_feature_vector(problems[0], model=model, num_features=200, index2word_set=index2word_set)
+        question = avg_feature_vector(problems[0], model=model, num_features=300, index2word_set=index2word_set)
         # for 4 candidates, calculate the similarity with question
         for i in range(1, 5):
-            candidate = avg_feature_vector(problems[i], model=model, num_features=200, index2word_set=index2word_set)
+            candidate = avg_feature_vector(problems[i], model=model, num_features=300, index2word_set=index2word_set)
             sim = 1 - spatial.distance.cosine(question, candidate)
             
             resultInfo = {'id': index, 'score': sim}

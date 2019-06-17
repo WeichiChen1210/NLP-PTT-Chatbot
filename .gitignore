@@ -1,7 +1,10 @@
 ptt_seg.txt
 wiki_seg.txt
 wiki_texts.txt
+/texts/myans.txt
+/texts/myans.csv
 /models
 *.pptx
 *.bz2
 /__pycache__
+/src/__pycache__
