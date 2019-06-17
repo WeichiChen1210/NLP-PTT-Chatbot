@@ -111,6 +111,9 @@ def main():
     fp = open("../texts/myans.txt", "w")
     fp.writelines(result)
     fp.close()
+    fp = open("../texts/myans.csv", "w")
+    fp.writelines(result)
+    fp.close()
 
 if __name__ == "__main__":
     main()
